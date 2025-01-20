@@ -1,0 +1,155 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(115,72,72,1) 100%);
+}
+header{
+    background-color: #8C2B32;
+    text-align: center;
+    padding: 1% 0%;
+    margin: 0%;
+    color: white;
+    
+}
+
+.contenedor-trivia {
+    text-align: center;
+    flex-grow: 1;
+    max-width: 50%;
+    margin: 3% auto;
+    background: rgb(220, 180, 180);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pregunta {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.opciones {
+    display:grid;
+    gap: 10px;
+}
+
+button {
+    padding: 0.5% 0%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.opcion {
+    margin: 0 auto;
+    width: 50%;
+    background-color: #e9ecef;
+    font-size: 1.1em;
+}
+
+.opcion:hover {
+    background-color: #dee2e6;
+    transform: translateY(-2px);
+}
+
+.correcta {
+    background-color: #52bd79;
+    color: white;
+}
+
+.incorrecta {
+    background-color: #dc3545;
+    color: white;
+}
+
+#puntaje {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #2c3e50;
+}
+
+#boton-siguiente {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    margin: 20px auto 0;
+    width: auto;
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+#boton-siguiente:hover {
+    background-color: #0056b3;    
+}
+
+.menu-navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.boton-tema {
+    background-color: rgb(220, 180, 180);
+    color: black;
+    padding: 0.5% 1%;
+}
+
+.boton-tema:hover {
+    background-color: #3998d3;
+}
+footer{
+    background-color: #8C2B32;
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 1% 0%;
+}
+
+@media only screen and (max-width: 768px) {
+ 
+ .contenedor-trivia{
+    max-width: 90%;
+    text-align: center;
+    margin: 20% auto;
+ }
+ .menu-navegacion{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    gap: 2%;
+}
+}   
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    header{
+        height: 20vh;
+        padding: 6%;
+    }
+    .contenedor-trivia {
+        max-width: 80%;
+        margin: 16% auto;
+        background-color: blue;
+        font-size: 1.2rem;
+    }
+    .menu-navegacion{
+        margin-top: 4%;
+        margin-bottom: 4%;
+        gap: 2%;
+    }
+    .boton-tema {
+        padding: 1% 2%;
+        font-size: 1.2rem;
+    }
+}
+
