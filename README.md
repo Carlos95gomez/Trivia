@@ -1,1 +1,2 @@
-Este código es libre para usar y modificar. Si lo usas en un proyecto, me encantaría saberlo 😊.
+Pagina con una trivia de tres temas 
+https://carlos95gomez.github.io/Trivia/
